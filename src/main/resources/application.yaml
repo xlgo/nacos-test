@@ -6,14 +6,12 @@ spring:
   cloud:
     nacos:
       config:
-        refresh-enabled: true
         server-addr: ${nacos.server:192.168.11.16:8849}
         username: ${nacos.username:nacos}
         password: ${nacos.password:nacos}
         namespace: ${nacos.namespace:public}
         file-extension: properties
-        preference: remote
 
   config:
     import:
-      - nacos:${spring.application.name}.properties?refreshEnabled=true
+      - nacos:${spring.application.name}.properties

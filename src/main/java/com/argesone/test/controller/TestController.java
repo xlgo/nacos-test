@@ -17,7 +17,7 @@ public class TestController {
     @Value("${test}")
     private String test;
     @NacosValue("${test}")
-    private String test2;
+    private String test2; //不能用
     @Autowired
     private DtConfig config;
 

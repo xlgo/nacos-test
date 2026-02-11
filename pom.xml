@@ -15,7 +15,7 @@
         <java.version>17</java.version>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
-        <spring-boot.version>3.5.9</spring-boot.version>
+        <spring-boot.version>3.5.7</spring-boot.version>
         <spring-cloud.version>2025.0.1</spring-cloud.version>
         <spring-cloud-alibaba.version>2025.0.0.0</spring-cloud-alibaba.version>
     </properties>
@@ -30,9 +30,15 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
         <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+       <!-- 这个注释掉就好了
+       <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-bootstrap</artifactId>
         </dependency>
+        -->
     </dependencies>
     <dependencyManagement>
         <dependencies>
